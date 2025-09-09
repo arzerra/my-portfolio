@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-    <div className='h-screen w-full bg-gray-100 dark:bg-[#021526]'>
+    <div className='h-full w-full bg-gray-100 dark:bg-[#021526]'>
     <Header/>
     <Hero/>
     </div>
