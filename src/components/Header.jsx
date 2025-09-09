@@ -31,9 +31,6 @@ function Header() {
           } absolute top-25 left-0 w-full bg-white dark:bg-[#27374D] z-50 md:static md:block md:w-auto md:h-auto`}
         >
           <ul className="flex flex-col md:flex-row gap-5 items-center font-[Quicksand] text-lg p-4 md:p-0">
-            <li>
-              <DarkMode />
-            </li>
             <li><a 
                  href="#about" 
                  className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
