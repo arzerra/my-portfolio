@@ -6,7 +6,7 @@ function Header() {
 
   return (
     <header className="bg-white dark:bg-[#27374D] dark:text-white">
-      <div className="container mx-auto flex justify-between items-center py-5 px-3 sm:px-0">
+      <div className="container mx-auto flex justify-between items-center py-5 px-5 sm:px-0">
         <a href="/"><img src="icon/logo1.png  " alt="" className="w-15"/></a>
         
         <button
@@ -14,7 +14,7 @@ function Header() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <div className="flex gap-5">
-          <DarkMode />
+          
             {isOpen ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-9">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-9">
@@ -28,13 +28,44 @@ function Header() {
         <nav
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-25 left-0 w-full bg-white dark:bg-[#27374D] md:static md:block md:w-auto`}
+          } absolute top-25 left-0 w-full bg-white dark:bg-[#27374D] z-50 md:static md:block md:w-auto md:h-auto`}
         >
-          <ul className="flex flex-col md:flex-row gap-5 items-center text-xl p-4 md:p-0">
-            <li><a href="">About</a></li>
-            <li><a href="">Experience</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Certification & Awards</a></li>
+          <ul className="flex flex-col md:flex-row gap-5 items-center font-[Quicksand] text-lg p-4 md:p-0">
+            <li>
+              <DarkMode />
+            </li>
+            <li><a 
+                 href="#about" 
+                 className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
+                 after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:transition-all after:duration-300
+                 hover:after:w-full">
+                  About
+                </a>
+            </li>
+            <li><a 
+                  href="#experience" 
+                  className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
+                  after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:transition-all after:duration-300
+                  hover:after:w-full">
+                    Experience
+                    </a>
+            </li>
+            <li><a 
+                 href="#projects" 
+                 className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
+                 after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:transition-all after:duration-300
+                 hover:after:w-full">
+                  Projects
+                  </a>
+            </li>
+            <li><a 
+                 href="#certificate" 
+                 className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
+                 after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:mt-1 after:transition-all after:duration-300
+                 hover:after:w-full">
+                  Certifications
+                  </a>
+            </li>
             <li className="hidden sm:block"><DarkMode /></li>
           </ul>
         </nav>
