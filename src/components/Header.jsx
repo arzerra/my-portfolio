@@ -14,7 +14,7 @@ function Header() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <div className="flex gap-5">
-          
+          <DarkMode />
             {isOpen ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-9">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-9">
@@ -31,6 +31,14 @@ function Header() {
           } absolute top-25 left-0 w-full bg-white dark:bg-[#27374D] z-50 md:static md:block md:w-auto md:h-auto`}
         >
           <ul className="flex flex-col md:flex-row gap-5 items-center font-[Quicksand] text-lg p-4 md:p-0">
+            <li><a 
+                 href="/" 
+                 className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
+                 after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:transition-all after:duration-300
+                 hover:after:w-full">
+                  Home
+                </a>
+            </li>
             <li><a 
                  href="#about" 
                  className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
