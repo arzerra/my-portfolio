@@ -3,13 +3,18 @@ import styled from 'styled-components';
 
 const Toggle = () => {
 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(() => {
+      const savedTheme = localStorage.getItem("darkMode");
+      return savedTheme ? JSON.parse(savedTheme) : false;
+    });
 
     useEffect(() => {
         if (darkMode) {
             document.documentElement.classList.add("dark");
+            localStorage.setItem("darkMode", "true");
         } else{
             document.documentElement.classList.remove("dark")
+            localStorage.setItem("darkMode", "false");
         }
     }, [darkMode]);
 
