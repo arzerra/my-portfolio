@@ -18,7 +18,7 @@ function About() {
   
   return (
     <>
-      <div id="about" className="pt-20 sm:pt-30">
+      <div id="about" className="py-20 sm:py-30">
         <div className='container flex flex-col sm:flex-row pt-10 px-5 sm:px-0'>
 
           {/* left */}
