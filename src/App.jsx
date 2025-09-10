@@ -20,9 +20,13 @@ function App() {
 
   return (
     <>
+    <div className='h-full w-full bg-gray-100 dark:bg-[#021526]   dark:[background-image:radial-gradient(rgba(255,255,255,0.171)_2px,transparent_0)]
+  dark:[background-size:30px_30px] 
+  dark:[background-position:-5px_-5px]'>
     <Header/>
     <Hero/>
     <About/>
+    </div>
     </>
   )
 }
