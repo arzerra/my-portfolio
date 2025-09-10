@@ -3,6 +3,7 @@ import Typewriter from "typewriter-effect";
 function Hero() {
   return (
     <>
+    <div className="mt-20">
       <div className='container flex flex-col sm:flex-row pt-10'>
         <div className='flex flex-1 items-center justify-center' data-aos="fade-right">
             <img src="gif/1.gif" alt="Light Logo" className="w-70 sm:w-100 dark:hidden" />
@@ -22,7 +23,7 @@ function Hero() {
             /></h1>
             <div>
             <a href="/documents/Resume.pdf" download>
-              <button class="text-[1rem] text-black dark:text-white uppercase px-5 py-2.5 rounded-[10px] border-2 border-[#black] dark:border-[#fafafa] bg-[#white] dark:bg-[transparent] shadow-[3px_3px_0_0_black] dark:shadow-[3px_3px_0_0_#fafafa] cursor-pointer my-9 active:shadow-none active:translate-x-[3px] active:translate-y-[3px]">
+              <button className="text-[1rem] text-black dark:text-white uppercase px-5 py-2.5 rounded-[10px] border-2 border-[#black] dark:border-[#fafafa] bg-[#white] dark:bg-[transparent] shadow-[3px_3px_0_0_black] dark:shadow-[3px_3px_0_0_#fafafa] cursor-pointer my-9 active:shadow-none active:translate-x-[3px] active:translate-y-[3px]">
                 Resume
               </button>
             </a>  
@@ -34,6 +35,7 @@ function Hero() {
           </div>
         </div>
       </div>
+    </div>
     </>
   )
 }

@@ -5,7 +5,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white dark:bg-[#27374D] dark:text-white">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-[#27374D] dark:text-white">
       <div className="container mx-auto flex justify-between items-center py-5 px-5 sm:px-0">
         <a href="/"><img src="icon/logo1.png  " alt="" className="w-15"/></a>
         
@@ -14,7 +14,6 @@ function Header() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <div className="flex gap-5">
-          <DarkMode />
             {isOpen ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-9">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-9">
@@ -71,7 +70,6 @@ function Header() {
                   Certifications
                   </a>
             </li>
-            <li className="hidden sm:block"><DarkMode /></li>
           </ul>
         </nav>
       </div>
