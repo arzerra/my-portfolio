@@ -3,6 +3,9 @@ import Typewriter from "typewriter-effect";
 function Hero() {
   return (
     <>
+    <div className='h-full w-full bg-gray-100 dark:bg-[#021526]   dark:[background-image:radial-gradient(rgba(255,255,255,0.171)_2px,transparent_0)]
+  dark:[background-size:30px_30px] 
+  dark:[background-position:-5px_-5px]'>
       <div className='container flex flex-col sm:flex-row pt-10'>
         <div className='flex flex-1 items-center justify-center' data-aos="fade-right">
             <img src="gif/1.gif" alt="Light Logo" className="w-70 sm:w-100 dark:hidden" />
@@ -23,7 +26,7 @@ function Hero() {
             <div>
             <a href="/documents/Resume.pdf" download>
               <button class="text-[1rem] text-black dark:text-white uppercase px-5 py-2.5 rounded-[10px] border-2 border-[#black] dark:border-[#fafafa] bg-[#white] dark:bg-[transparent] shadow-[3px_3px_0_0_black] dark:shadow-[3px_3px_0_0_#fafafa] cursor-pointer my-9 active:shadow-none active:translate-x-[3px] active:translate-y-[3px]">
-                Know Me More
+                Resume
               </button>
             </a>  
             </div>
@@ -33,6 +36,7 @@ function Hero() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   )
