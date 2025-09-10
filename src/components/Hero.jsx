@@ -20,10 +20,10 @@ function Hero() {
   return (
     <>
     <div className="pt-30 sm:pt-50">
-      <div className='container flex flex-col sm:flex-row pt-10'>
+      <div className='container flex flex-col sm:flex-row pt-10 px-5 sm:px-0'>
         {/* 1st */}
         <div className='flex flex-1 flex-col items-center justify-center mt-5 sm:mt-0 order-2 sm:order-1'>
-          <div className="flex flex-col space-y-10 sm:space-y-10 text-center">
+          <div className="flex flex-col space-y-10 sm:space-y-15 text-center">
             <div className="">
             <h1 className="text-black dark:text-white text-4xl sm:text-6xl font-['Rubik_Iso']">Hi, I'm Clark!</h1>
             <h1 className="dark:text-white text-2xl sm:text-3xl mt-2 font-['Bungee_Shade']">
@@ -53,7 +53,7 @@ function Hero() {
             </div>
             </div>
             <div className="text-xl">
-              <h1 className='dark:text-white sm:text-justify indent-15'>
+              <h1 className="font-['Barlow_Condensed'] dark:text-white text-justify sm:text-justify indent-15">
                 I'm an IT graduate, passionate about transforming ideas into functional, user-friendly web applications. 
                 I enjoy building digital solutions that not only work flawlessly but also create meaningful experiences for users.</h1>
             </div>

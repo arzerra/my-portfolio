@@ -10,8 +10,9 @@ function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-[#27374D] dark:text-white">
       <div className="container mx-auto flex justify-between items-center py-5 px-5 sm:px-0">
-        <div className="flex items-center gap-1 font-[Quicksand] text-2xl">
+        <div className="flex items-center gap-2 font-[Quicksand] text-2xl">
           <a href="/"><img src="icon/logo1.png  " alt="" className="w-15"/></a>
+          {/* <a href="/"><h1>Portfolio</h1></a> */}
         </div>
         
         <button
@@ -82,14 +83,14 @@ function Header() {
                   Contacts
                   </a>
             </li>
-            <li><Link 
+            {/* <li><Link 
                  to="/fonts" 
-                 className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
+                 className="relative after:content-[''] after:sabsolute after:left-0 after:-bottom-1
                  after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:mt-1 after:transition-all after:duration-300
                  hover:after:w-full">
                   Fonts
                   </Link>
-            </li>
+            </li> */}
             <div className='fixed justify-center items-center sm:right-10 z-50 hidden sm:block'>
               <Toggle/>
             </div>

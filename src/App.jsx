@@ -19,16 +19,14 @@ function App() {
   }, []);
 
   return (
-    <div className='h-full w-full bg-gray-100 dark:bg-[#021526]'>
+    <div className='h-full w-full bg-gray-100 dark:bg-gradient-to-r dark:from-[#0A2647] dark:to-[#021526]'>
       <div className='fixed top-0 right-2 sm:right-10 mt-30 z-50 block sm:hidden'>
         <Toggle/>
       </div>
 
       <Router>
         <Header/>
-
         <Routes>
-          {/* 👇 Homepage route */}
           <Route 
             path="/" 
             element={
@@ -38,7 +36,7 @@ function App() {
               </>
             } 
           />
-          <Route path="/fonts" element={<Fonts />} />
+          <Route path="/fonts" element={<Fonts/>} />
           <Route path="*" element={<h1 className="text-center text-2xl">404 - Not Found</h1>} />
         </Routes>
       </Router>
