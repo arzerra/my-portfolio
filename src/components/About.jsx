@@ -53,19 +53,21 @@ function About() {
             </div>
             {/* Right */}
             <div className="flex flex-1 flex-col items-center justify-center mt-5 sm:mt-0 dark:text-white space-y-5">
-              <div className="flex justify-center items-center">
-                <h1 className='text-center text-4xl'>About Me</h1>
+              <div className="flex justify-center items-center w-full">
+                <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
+                <h1 className='px-4 text-center text-4xl'>About Me</h1>
+                <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
               </div>
               <div className="flex flex-col text-center justify-start items-start">
                 <div className="flex justify-center items-center mt-5">
                   <h1 className="text-justify sm:text-justify indent-5">
-                    I'm Ian Clark Cañete, I graduated Bachelor of Science in Information Technology. 
+                    I'm Ian Clark Cañete, I graduated Bachelor of Science in Information Technology from the University of Mindanao. 
                     I thrive on the excitement of continuous learning and enjoy tackling new challenges. 
                     I also have experience working as a customer service representative, which has helped me develop strong communication skills.
                   </h1>
                 </div>
 
-                <ul className="flex flex-row gap-10 mt-6 text-md text-center justify-center items-center">
+                <ul className="flex flex-row gap-5 sm:gap-10 mt-6 text-md text-center justify-center items-center">
                   {["Contact", "Soft Skills", "Hobbies", "Language"].map((tab) => (
                     <li
                       key={tab}
@@ -128,23 +130,38 @@ function About() {
           </div>
 
           {/* Education */}
-          <div className="flex flex-col items-center justify-center mt-10 dark:text-white mt-20">
+          {/* <div className="flex flex-col items-center justify-center mt-10 dark:text-white mt-0 sm:mt-10">
             <div>
               <h1 className="text-4xl">EDUCATION</h1>
             </div>
 
             <div className="w-full border-1 dark:border-[#F9F3F3] shadow-xl rounded-2xl mt-5">
-                  <div className="flex flex-col items-center justify-center m-5">
-                    <h1 className="text-4xl">Univesity of Mindanao</h1>
-                    <h1 className="text-2xl">Bachelor of Science in Information Technology</h1>
-                    <h1 className="text-xl">College of Computing Education (CCE)</h1>
+
+              <div className="flex flex-col items-center justify-center m-5">
+                <h1 className="text-xl sm:text-4xl">Univesity of Mindanao</h1>
+                <h1 className="text-md sm:text-2xl">Bachelor of Science in Information Technology</h1>
+                <h1 className="text-sm sm:text-xl">College of Computing Education (CCE)</h1>
+              </div>
+              <div className="flex flex-row items-center justify-center ">
+                <div className="border-r-1 w-full px-5">
+                  <div className="flex items-center justify-center">
+                    <h1>Capstone</h1>
                   </div>
+                </div>
+                <div className="border-l-1 w-full px-5">
+
+                </div>
+              </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Tech Stack */}
-            <div className="flex items-center justify-center  mt-20">
-              <h1 className="text-4xl">Tech Stack</h1>
+            <div className="flex items-center justify-center w-full my-10">
+              <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
+              <h1 className="px-4 text-4xl font-bold text-center dark:text-white">
+                Tech Stack
+              </h1>
+              <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
             </div>
             <div className="w-full overflow-hidden bg-transparent py-5 mt-5">
               <div className="relative flex w-full overflow-hidden">
