@@ -21,7 +21,7 @@ function Hero() {
   return (
     <>
     <div className="pt-20 sm:pt-40">
-      <div className='container flex flex-col sm:flex-row pt-10 px-5 sm:px-0 md:px-5'>
+      <div className='container flex flex-col sm:flex-row pt-10 px-5 sm:px-0'>
 
         {/* left */}
         <div className='flex flex-1 flex-col items-center justify-center sm:mt-0 order-2 sm:order-1'>
@@ -54,7 +54,7 @@ function Hero() {
                   />
               </div>
             </div>
-            <div className="text-xl sm:text-2xl -mt-4 sm:mt-0">
+            <div className="text-lg sm:text-2xl -mt-4 sm:mt-0">
               <div>
               <h1 className="font-['Barlow_Condensed'] dark:text-white text-center sm:text-justify indent-0 sm:indent-5">
                 Passionate about transforming ideas into functional, user-friendly web applications. 
