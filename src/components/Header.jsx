@@ -83,14 +83,14 @@ function Header() {
                   Contacts
                   </a>
             </li>
-            <li><Link 
+            {/* <li><Link 
                  to="/fonts" 
                  className="relative after:content-[''] after:sabsolute after:left-0 after:-bottom-1
                  after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:mt-1 after:transition-all after:duration-300
                  hover:after:w-full">
                   Fonts
                   </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
 

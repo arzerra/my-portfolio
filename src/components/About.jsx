@@ -3,9 +3,14 @@ import { useState, useEffect } from "react";
 import { CgMail } from "react-icons/cg";
 import { FiGithub } from "react-icons/fi";
 import { CiLocationOn, CiPhone  } from "react-icons/ci";
-import { FaLinkedin } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaJsSquare, FaReact, FaNodeJs, FaJava, FaPython, } from "react-icons/fa";
+import { FaGitAlt, FaFlutter } from "react-icons/fa6";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiMysql, SiCplusplus  } from "react-icons/si";
+
 
 function About() {
+
     const images = [
       {light: "images/grad.jpg", dark: "images/grad.jpg"},
       {light: "gif/1.gif", dark: "images/glow2.png"}
@@ -19,18 +24,34 @@ function About() {
       }, 3000);
       return () => clearInterval(interval);
     }, [images.length]);
+
+    const techs = [
+      { icon: <FaHtml5 size={60} />},
+      { icon: <FaCss3Alt size={60} />},
+      { icon: <FaBootstrap size={60} /> },
+      { icon: <FaJsSquare size={60} /> },
+      { icon: <BiLogoTypescript size={65} /> },
+      { icon: <FaReact size={60} /> },
+      { icon: <FaNodeJs size={60} /> },
+      { icon: <SiMysql size={65} /> },
+      { icon: <FaJava  size={60} /> },
+      { icon: <FaPython size={60} /> },
+      { icon: <FaFlutter size={60} /> },
+      { icon: <SiCplusplus size={60} /> },
+      { icon: <FaGitAlt size={60} /> },
+    ];
   
   return (
     <>
       <div id="about" className="py-20">
         <div className='container  pt-10 px-5 sm:px-0 md:px-5'>
           <div className="flex flex-col sm:flex-row">
-
+            {/* Left */}
             <div className='flex flex-1 items-center justify-center sm:justify-start' data-aos="fade-right">
                 <img src="gif/1.gif" alt="Light Logo" className="w-70 sm:w-100 dark:hidden transition-opacity duration-700 rounded-4xl" />
                 <img src="images/glow2.png" alt="Dark Logo" className="w-70 sm:w-100 hidden dark:block transition-opacity duration-700 rounded-4xl" />
             </div>
-
+            {/* Right */}
             <div className="flex flex-1 flex-col items-center justify-center mt-5 sm:mt-0 dark:text-white space-y-5">
               <div className="flex justify-center items-center">
                 <h1 className='text-center text-4xl'>About Me</h1>
@@ -105,6 +126,8 @@ function About() {
               </div>
             </div>
           </div>
+
+          {/* Education */}
           <div className="flex flex-col items-center justify-center mt-10 dark:text-white mt-20">
             <div>
               <h1 className="text-4xl">EDUCATION</h1>
@@ -118,6 +141,36 @@ function About() {
                   </div>
             </div>
           </div>
+
+          {/* Tech Stack */}
+            <div className="flex items-center justify-center  mt-20">
+              <h1 className="text-4xl">Tech Stack</h1>
+            </div>
+            <div className="w-full overflow-hidden bg-transparent py-5 mt-5">
+              <div className="relative flex w-full overflow-hidden">
+                <div className="flex animate-marquee whitespace-nowrap">
+                  {techs.map((t, i) => (
+                    <div
+                      key={i}
+                      className="flex flex-col items-center justify-center mx-10 text-black dark:text-white"
+                    >
+                      {t.icon}
+                      <span className="mt-2 text-lg">{t.name}</span>
+                    </div>
+                  ))}
+                  {techs.map((t, i) => (
+                    <div
+                      key={i + "-copy"}
+                      className="flex flex-col items-center justify-center mx-10 text-black dark:text-white"
+                    >
+                      {t.icon}
+                      <span className="mt-2 text-lg">{t.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
         </div>
       </div>
     </>
