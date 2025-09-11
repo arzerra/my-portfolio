@@ -1,12 +1,16 @@
 import Typewriter from "typewriter-effect";
 import { useState, useEffect } from "react";
+import { CgMail } from "react-icons/cg";
+import { FiGithub } from "react-icons/fi";
+import { CiLocationOn, CiPhone  } from "react-icons/ci";
+import { FaLinkedin } from "react-icons/fa";
 
 function About() {
     const images = [
       {light: "images/grad.jpg", dark: "images/grad.jpg"},
       {light: "gif/1.gif", dark: "images/glow2.png"}
     ];
-  
+    const [activeTab, setActiveTab] = useState("Contact");
     const [currentIndex, setCurrentIndex] = useState(0);
   
     useEffect(() => {
@@ -21,20 +25,84 @@ function About() {
       <div id="about" className="py-20">
         <div className='container  pt-10 px-5 sm:px-0 md:px-5'>
           <div className="flex flex-col sm:flex-row">
-            {/* left */}
+
             <div className='flex flex-1 items-center justify-center sm:justify-start' data-aos="fade-right">
                 <img src="gif/1.gif" alt="Light Logo" className="w-70 sm:w-100 dark:hidden transition-opacity duration-700 rounded-4xl" />
                 <img src="images/glow2.png" alt="Dark Logo" className="w-70 sm:w-100 hidden dark:block transition-opacity duration-700 rounded-4xl" />
             </div>
 
-            {/* right */}
-            <div className='flex flex-1 flex-col items-center justify-center mt-5 sm:mt-0 bg-white shadow-xl rounded-4xl p-5 '>
-              <div className="flex flex-col text-center justify-start items-center h-full">
+            <div className='flex flex-1 flex-col items-center justify-start mt-5 sm:mt-0 dark:text-white'>
                 <div className="flex justify-center items-center">
                   <h1 className='text-center text-4xl'>About Clark!</h1>
                 </div>
-                <div className="flex justify-center items-center mt-5">
-                  <h1 className='sm:text-justify'>I'm a Bachelor of Science in Information Technology graduate, asdfasdfsasdfasdfsadfasdf</h1>
+              <div className="flex flex-1 flex-col items-center justify-start mt-5 sm:mt-0 dark:text-white">
+                <div className="flex flex-col text-center justify-start items-start">
+                  <div className="flex justify-center items-center mt-5">
+                    <h1 className="sm:text-justify indent-5">
+                      I'm Ian Clark Cañete, I graduated Bachelor of Science in Information Technology. 
+                      I thrive on the excitement of continuous learning and enjoy tackling new challenges. 
+                      I also have experience working as a customer service representative, which has helped me develop strong communication skills.
+                    </h1>
+                  </div>
+
+                  <ul className="flex flex-row gap-10 mt-6 text-md font-normal text-center justify-center items-center">
+                    {["Contact", "Soft Skills", "Hobbies", "Language"].map((tab) => (
+                      <li
+                        key={tab}
+                        className={`cursor-pointer pb-1 transition-colors ${
+                          activeTab === tab
+                            ? "border-b-2 border-black dark:border-white font-semibold"
+                            : "hover:font-semibold"
+                        }`}
+                        onClick={() => setActiveTab(tab)}
+                      >
+                        {tab}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-6 text-start justify-start">
+                    {activeTab === "Contact" && (
+                      <ul className="list-none border-l-2 border-gray-500 pl-5 space-y-5">
+                        <li className="flex items-center gap-4"><CgMail size={20}/> <span>ianclrk.canete@gmail.com</span></li>
+                        <li className="flex items-center gap-4"><CgMail size={20}/> <span>i.canete.524581@umindanao.edu.ph</span></li>
+                        <li className="flex items-center gap-4"><CiPhone  size={20}/> <span>09912174478 / 09288265266</span></li>
+                        <li className="flex items-center gap-4"><CiLocationOn size={20}/> <span>Catalunan Grande, Davao City, Philippines</span></li>
+                        <li className="flex items-center gap-4"><FiGithub size={20}/> <span>github.com/arzerra</span></li>
+                        </ul>
+                    )}
+                    {activeTab === "Soft Skills" && (
+                      <>
+                      <ul className="list-none border-l-2 border-gray-500 pl-5 space-y-5">
+                        <li className="flex items-center gap-4">• <span>Communication Skills</span></li>
+                        <li className="flex items-center gap-4">• <span>Critical Thinking</span></li>
+                        <li className="flex items-center gap-4">• <span>Adaptability</span></li>
+                        <li className="flex items-center gap-4">• <span>Teamwork</span></li>
+                        <li className="flex items-center gap-4">• <span>Time Management</span></li>
+                        <li className="flex items-center gap-4">• <span>Customer Service</span></li>
+                      </ul>
+                      </>
+                    )}
+                    {activeTab === "Hobbies" && (
+                      <>
+                      <ul className="list-none border-l-2 border-gray-500 pl-5 space-y-5">
+                        <li className="flex items-center gap-4">• <span>Coding</span></li>
+                        <li className="flex items-center gap-4">• <span>Cooking</span></li>
+                        <li className="flex items-center gap-4">• <span>Reading Manhwa</span></li>
+                        <li className="flex items-center gap-4">• <span>Watching Anime</span></li>
+                        <li className="flex items-center gap-4">• <span>Basket Ball</span></li>
+                      </ul>
+                      </>
+                    )}
+                    {activeTab === "Language" && (
+                      <>
+                      <ul className="list-none border-l-2 border-gray-500 pl-5 space-y-5">
+                        <li className="flex items-center gap-4">• <span>English</span></li>
+                        <li className="flex items-center gap-4">• <span>Tagalog</span></li>
+                        <li className="flex items-center gap-4">• <span>Bisaya</span></li>
+                      </ul>
+                      </>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
