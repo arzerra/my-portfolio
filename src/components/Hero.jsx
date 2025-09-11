@@ -20,12 +20,12 @@ function Hero() {
 
   return (
     <>
-    <div className="pt-30 sm:pt-40">
-      <div className='container flex flex-col sm:flex-row pt-10 px-5 sm:px-0'>
+    <div className="pt-20 sm:pt-40">
+      <div className='container flex flex-col sm:flex-row pt-10 px-5 sm:px-0 md:px-5'>
 
         {/* left */}
-        <div className='flex flex-1 flex-col items-center justify-center mt-5 sm:mt-0 order-2 sm:order-1'>
-          <div className="flex flex-col space-y-10 sm:space-y-13 text-center">
+        <div className='flex flex-1 flex-col items-center justify-center sm:mt-0 order-2 sm:order-1'>
+          <div className="flex flex-col space-y-7 sm:space-y-10 text-center" data-aos="fade-right">
             <div className="">
               <h1 className="text-black dark:text-white text-4xl sm:text-6xl font-['Archivo_Black']">Hi, I'm Clark, </h1>
               <h1 className="dark:text-white text-2xl sm:text-5xl mt-2 font-['Bungee_Shade']">
@@ -50,21 +50,21 @@ function Hero() {
                   <img 
                     src="gif/pointer.gif" 
                     alt="pointer" 
-                    className="absolute -right-13 top-26 -translate-y-1/2 w-20 z-20 pointer-events-none"
+                    className="absolute -right-10 sm:-right-13 top-25 sm:top-26 -translate-y-1/2 w-15 sm:w-20 z-20 pointer-events-none"
                   />
               </div>
             </div>
-            <div className="text-lg sm:text-xl">
+            <div className="text-xl sm:text-2xl -mt-4 sm:mt-0">
               <div>
-              <h1 className="font-['Barlow_Condensed'] dark:text-white text-justify sm:text-justify indent-10">
+              <h1 className="font-['Barlow_Condensed'] dark:text-white text-center sm:text-justify indent-0 sm:indent-5">
                 Passionate about transforming ideas into functional, user-friendly web applications. 
                 I enjoy building digital solutions that not only work flawlessly but also create meaningful experiences for users. Come explore my journey and projects.</h1>
                 </div>
-                <div className="flex gap-3 text-black dark:text-white items-center justify-center sm:justify-start mt-2">
-                  <FaGithub  size={40}/>
-                  <FaLinkedin size={40}/>
-                  <FaFacebook  size={40}/>
-                  <FaTelegram  size={40}/>
+                <div className="flex gap-3 text-black dark:text-white items-center justify-center sm:justify-start mt-5">
+                  <a href="https://github.com/arzerra" target="_blank" rel="noopener noreferrer"><FaGithub  size={40}/></a>
+                  <a href="https://www.linkedin.com/in/ianclarkcanete/" target="_blank" rel="noopener noreferrer"><FaLinkedin  size={40}/></a>
+                  <a href="https://www.facebook.com/Ic.0716" target="_blank" rel="noopener noreferrer"><FaFacebook  size={40}/></a>
+                  <a href="" target="_blank" rel="noopener noreferrer"><FaTelegram  size={40}/></a>
                 </div>
             </div>
           </div>

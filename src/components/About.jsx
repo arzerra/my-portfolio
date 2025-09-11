@@ -18,24 +18,30 @@ function About() {
   
   return (
     <>
-      <div id="about" className="py-20 sm:py-30">
-        <div className='container flex flex-col sm:flex-row pt-10 px-5 sm:px-0'>
+      <div id="about" className="py-20">
+        <div className='container  pt-10 px-5 sm:px-0 md:px-5'>
+          <div className="flex flex-col sm:flex-row">
+            {/* left */}
+            <div className='flex flex-1 items-center justify-center sm:justify-start' data-aos="fade-right">
+                <img src="gif/1.gif" alt="Light Logo" className="w-70 sm:w-100 dark:hidden transition-opacity duration-700 rounded-4xl" />
+                <img src="images/glow2.png" alt="Dark Logo" className="w-70 sm:w-100 hidden dark:block transition-opacity duration-700 rounded-4xl" />
+            </div>
 
-          {/* left */}
-          <div className='flex flex-1 items-center justify-center sm:justify-start' data-aos="fade-right">
-              <img src="gif/1.gif" alt="Light Logo" className="w-70 sm:w-100 dark:hidden transition-opacity duration-700 rounded-4xl" />
-              <img src="images/glow2.png" alt="Dark Logo" className="w-70 sm:w-100 hidden dark:block transition-opacity duration-700 rounded-4xl" />
-          </div>
-
-          {/* right */}
-          <div className='flex flex-1 flex-col items-center justify-center mt-5 sm:mt-0'>
-            <div className="flex flex-col space-y-10 sm:space-y-30 text-center">
-              <div className="">
-                <h1 className='dark:text-white sm:text-justify'>I'm an IT graduate, passionate about transforming ideas into functional, user-friendly web applications. I enjoy building digital solutions that not only work flawlessly but also create meaningful experiences for users.</h1>
+            {/* right */}
+            <div className='flex flex-1 flex-col items-center justify-center mt-5 sm:mt-0 bg-white shadow-xl rounded-4xl p-5 '>
+              <div className="flex flex-col text-center justify-start items-center h-full">
+                <div className="flex justify-center items-center">
+                  <h1 className='text-center text-4xl'>About Clark!</h1>
+                </div>
+                <div className="flex justify-center items-center mt-5">
+                  <h1 className='sm:text-justify'>I'm a Bachelor of Science in Information Technology graduate, asdfasdfsasdfasdfsadfasdf</h1>
+                </div>
               </div>
             </div>
           </div>
-
+          <div className="flex items-center justify-center mt-10 dark:text-white">
+            <h1>EDUCATION</h1>
+          </div>
         </div>
       </div>
     </>
