@@ -156,7 +156,7 @@ function About() {
           </div> */}
 
           {/* Tech Stack */}
-            <div className="flex items-center justify-center w-full my-10">
+            <div className="flex items-center justify-center w-full my-5 sm:my-10">
               <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
               <h1 className="px-4 text-4xl font-bold text-center dark:text-white">
                 Tech Stack
