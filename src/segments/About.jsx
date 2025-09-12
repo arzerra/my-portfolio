@@ -15,7 +15,7 @@ function About() {
       {light: "images/grad.jpg", dark: "images/grad.jpg"},
       {light: "gif/1.gif", dark: "images/glow2.png"}
     ];
-    const [activeTab, setActiveTab] = useState("Contact");
+    const [activeTab, setActiveTab] = useState("Soft Skills");
     const [currentIndex, setCurrentIndex] = useState(0);
   
     useEffect(() => {
