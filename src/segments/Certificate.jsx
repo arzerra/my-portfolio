@@ -1,4 +1,6 @@
 import React from 'react';
+import { MdKeyboardArrowLeft , MdKeyboardArrowRight  } from "react-icons/md";
+
 
 function Certificate() {
   const certificate = [
@@ -32,7 +34,7 @@ function Certificate() {
   return (
     <div id="certificate" className="py-10 sm:py-10">
       <div className="container px-5 sm:px-0 md:px-5">
-        <div className="dark:text-white flex justify-center items-center">
+        <div className="dark:text-white flex flex-col justify-center items-center">
           <h1 className="font-bold text-4xl">Certificates</h1>
         </div>
 
