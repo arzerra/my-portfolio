@@ -6,9 +6,9 @@ import "aos/dist/aos.css";
 import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
-import Toggle from './components/Toggle.jsx'
 import Fonts from './components/Fonts.jsx'
-import MatrixBackground from './components/MatrixBackground.jsx'
+import Experience from './components/Experience.jsx'
+
 
 function App() {
   useEffect(() => {
@@ -29,6 +29,7 @@ function App() {
               <>
                 <Hero/>
                 <About/>
+                <Experience/>
               </>
             } 
           />

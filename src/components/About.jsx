@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import { CgMail } from "react-icons/cg";
 import { FiGithub } from "react-icons/fi";
 import { CiLocationOn, CiPhone  } from "react-icons/ci";
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaJsSquare, FaReact, FaNodeJs, FaJava, FaPython, } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaJsSquare, FaReact, FaNodeJs, FaJava, FaPython, FaLaravel  } from "react-icons/fa";
 import { FaGitAlt, FaFlutter } from "react-icons/fa6";
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiMysql, SiCplusplus  } from "react-icons/si";
+import { SiMysql, SiCplusplus, SiTensorflow, SiFirebase   } from "react-icons/si";
 
 
 function About() {
@@ -26,24 +26,27 @@ function About() {
     }, [images.length]);
 
     const techs = [
-      { icon: <FaHtml5 size={60} />},
-      { icon: <FaCss3Alt size={60} />},
-      { icon: <FaBootstrap size={60} /> },
-      { icon: <FaJsSquare size={60} /> },
-      { icon: <BiLogoTypescript size={65} /> },
-      { icon: <FaReact size={60} /> },
-      { icon: <FaNodeJs size={60} /> },
-      { icon: <SiMysql size={65} /> },
-      { icon: <FaJava  size={60} /> },
-      { icon: <FaPython size={60} /> },
-      { icon: <FaFlutter size={60} /> },
-      { icon: <SiCplusplus size={60} /> },
-      { icon: <FaGitAlt size={60} /> },
+      { icon: <FaHtml5 className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <FaCss3Alt className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <FaBootstrap className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <FaJsSquare className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <BiLogoTypescript className="w-11 h-11 sm:w-[65px] sm:h-[65px]" /> },
+      { icon: <FaReact className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <FaNodeJs className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <SiMysql className="w-11 h-11 sm:w-[65px] sm:h-[65px]" /> },
+      { icon: <FaJava className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <FaPython className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <FaFlutter className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <SiCplusplus className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <FaGitAlt className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <FaLaravel className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <SiTensorflow  className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <SiFirebase  className="w-10 h-10 sm:w-16 sm:h-16" /> },
     ];
-  
+
   return (
     <>
-      <div id="about" className="py-20">
+      <div id="about" className="pt-20">
         <div className='container  pt-10 px-5 sm:px-0 md:px-5'>
           <div className="flex flex-col sm:flex-row">
             {/* Left */}
@@ -55,13 +58,13 @@ function About() {
             <div className="flex flex-1 flex-col items-center justify-center mt-5 sm:mt-0 dark:text-white space-y-5">
               <div className="flex justify-center items-center w-full">
                 <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
-                <h1 className='px-4 text-center text-4xl'>About Me</h1>
+                <h1 className='px-4 text-center font-bold text-2xl sm:text-4xl'>About Me</h1>
                 <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
               </div>
               <div className="flex flex-col text-center justify-start items-start">
                 <div className="flex justify-center items-center mt-5">
                   <h1 className="text-justify sm:text-justify indent-5">
-                    I'm Ian Clark Cañete, I graduated Bachelor of Science in Information Technology from the University of Mindanao. 
+                    I'm Ian Clark Cañete, graduated Bachelor of Science in Information Technology from the University of Mindanao. 
                     I thrive on the excitement of continuous learning and enjoy tackling new challenges. 
                     I also have experience working as a customer service representative, which has helped me develop strong communication skills.
                   </h1>
@@ -158,7 +161,7 @@ function About() {
           {/* Tech Stack */}
             <div className="flex items-center justify-center w-full my-5 sm:my-10">
               <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
-              <h1 className="px-4 text-4xl font-bold text-center dark:text-white">
+              <h1 className="px-4 text-2xl sm:text-4xl font-bold text-center dark:text-white">
                 Tech Stack
               </h1>
               <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
