@@ -56,7 +56,7 @@ function Hero() {
             </div>
             <div className="text-lg sm:text-2xl -mt-4 sm:mt-0">
               <div>
-              <h1 className="font-['Barlow_Condensed'] dark:text-white text-center sm:text-justify indent-0 sm:indent-5">
+              <h1 className="font-['Barlow_Condensed'] dark:text-white text-justify sm:text-justify indent-0 sm:indent-5">
                 Passionate about transforming ideas into functional, user-friendly web applications. 
                 I enjoy building digital solutions that not only work flawlessly but also create meaningful experiences for users. Come explore my journey and projects.</h1>
                 </div>
