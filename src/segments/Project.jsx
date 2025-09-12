@@ -16,7 +16,7 @@ function Project() {
             <h1 className="font-bold text-2xl sm:text-4xl ml-5 pr-5">Projects</h1>
           </div>
 
-          <div className='flex flex-col items-center sm:items-center justify-center gap-10 mt-10'>
+          <div className='flex flex-col items-center sm:items-center justify-center gap-10 mt-15'>
             <div className='flex flex-col sm:flex-row gap-10'>
               <Card1/>
               <Card2/>

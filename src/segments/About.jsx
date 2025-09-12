@@ -47,7 +47,7 @@ function About() {
   return (
     <>
       <div id="about" className="pt-25">
-        <div className='container  pt-10 px-5 sm:px-0 md:px-5'>
+        <div className='container pt-0 sm:pt-10 px-5 sm:px-0 md:px-5'>
           <div className="flex flex-col sm:flex-row">
             {/* Left */}
             <div className='flex flex-1 items-center justify-center sm:justify-start animate-leftright' data-aos="fade-right">

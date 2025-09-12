@@ -54,7 +54,7 @@ function Experience() {
   ];
 
   return (
-    <div id="experience" className="pt-10 sm:pt-25">
+    <div id="experience" className="pt-5 sm:pt-25">
       <div className="container px-5 sm:px-0 md:px-5">
         <div className="dark:text-white pt-5">
           <div className="flex items-center justify-start">

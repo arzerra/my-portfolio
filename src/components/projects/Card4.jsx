@@ -9,7 +9,7 @@ const Card4 = () => {
         <img src="images/projects/4.png" alt="" />
         <div className="card__content">
           <p className="card__title">Artisan Dental Clinic</p>
-          <p className="card__description">Develop a clean, user-friendly platform that reflects the clinic’s commitment to providing exceptional 
+          <p className="card__description">Developed a clean, user-friendly platform that reflects the clinic’s commitment to providing exceptional 
             dental care while making it easier for patients to learn about their services and book appointments online.</p>
         </div>
         </a>

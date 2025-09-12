@@ -32,12 +32,15 @@ function Certificate() {
   ];
 
   return (
-    <div id="certificate" className="py-10 sm:pt-25">
+    <div id="certificate" className="pt-10 sm:pt-25 pb-5">
       <div className="container px-5 sm:px-0 md:px-5">
-        <div className="dark:text-white flex flex-col justify-center items-center">
-          <h1 className="font-bold text-4xl">Certificates</h1>
+        <div className="flex items-center justify-center w-full mt-5 sm:mt-5">
+          <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
+          <h1 className="px-4 text-2xl sm:text-4xl font-bold text-center dark:text-white">
+            Certificates
+          </h1>
+          <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
         </div>
-
         {/* Carousel */}
         <div className="mt-10 pt-15 pb-2 flex overflow-x-auto snap-x snap-mandatory gap-6 custom-scrollbar">
           {certificate.map((cert, i) => (
