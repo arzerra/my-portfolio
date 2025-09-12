@@ -63,7 +63,7 @@ function Experience() {
           </div>
 
           {/* Timeline container */}
-          <div className="relative border-l-2 border-gray-300 dark:border-gray-600 mx-5 mt-10">
+          <div className="font-['Quicksand'] relative border-l-2 border-gray-300 dark:border-gray-600 mx-5 mt-10">
             {experiences.map((exp, index) => (
               <div
                 key={index}

@@ -7,7 +7,7 @@ function Footer() {
     <>
     <div className="pt-5 sm:pt-5">
         <div className="container px-5 sm:px-0 md:px-5">
-            <div className="flex flex-col sm:flex-row justify-between items-center border-t border-gray-400 dark:border-gray-600 w-full py-4 dark:text-white">
+            <div className="flex flex-col sm:flex-row justify-between items-center border-t border-gray-400 dark:border-gray-600 w-full py-4 dark:text-white font-['Quicksand']">
               <div className='flex flex-row gap-3 mt-2 sm:mt-0'>
                 <p className="text-sm">
                 &copy; Ian Clark L. Cañete {new Date().getFullYear()} - All Rights Reserved

@@ -49,20 +49,20 @@ function About() {
       <div id="about" className="pt-25">
         <div className='container pt-0 sm:pt-10 px-5 sm:px-0 md:px-5'>
           <div className="flex flex-col sm:flex-row">
-            {/* Left */}
+            {/* Left */} 
             <div className='flex flex-1 items-center justify-center sm:justify-start animate-leftright' data-aos="fade-right">
                 <img src="gif/1.gif" alt="Light Logo" className="w-70 sm:w-100 dark:hidden transition-opacity duration-700 rounded-4xl" />
                 <img src="images/glow2.png" alt="Dark Logo" className="w-70 sm:w-100 hidden dark:block transition-opacity duration-700 rounded-4xl" />
             </div>
             {/* Right */}
-            <div className="flex flex-1 flex-col items-center justify-center mt-5 sm:mt-0 dark:text-white space-y-5">
+            <div className="font-['Quicksand'] flex flex-1 flex-col items-center justify-center mt-5 sm:mt-0 dark:text-white space-y-5">
               <div className="flex justify-center items-center w-full">
                 <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
                 <h1 className='px-4 text-center font-bold text-2xl sm:text-4xl'>About Me</h1>
                 <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
               </div>
               <div className="flex flex-col text-center justify-start items-start">
-                <div className="flex justify-center items-center mt-5">
+                <div className="flex justify-center items-center mt-2">
                   <h1 className="text-justify sm:text-justify indent-5">
                     I'm Ian Clark Cañete, graduated Bachelor of Science in Information Technology from the University of Mindanao. 
                     I thrive on the excitement of continuous learning and enjoy tackling new challenges. 

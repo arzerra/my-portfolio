@@ -30,6 +30,7 @@ const StyledWrapper = styled.div`
     perspective: 1000px;
     box-shadow: 0 0 0 5px #ffffff80;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: "Quicksand", sans-serif;
   }
 
   .card svg {

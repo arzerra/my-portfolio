@@ -46,7 +46,7 @@ function Certificate() {
           {certificate.map((cert, i) => (
             <div
               key={i}
-              className="snap-center flex-none w-80 flex-col rounded-2xl bg-gradient-to-br from-white to-gray-50 text-gray-700 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-3"
+              className="snap-center flex-none w-80 flex-col rounded-2xl bg-gradient-to-br from-white to-gray-50 text-gray-700 font-['Quicksand'] shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-3"
             >
               <div className="relative mx-4 -mt-10 h-50 overflow-hidden rounded-2xl shadow-lg group">
                 <img src={cert.img} alt={cert.title} className="object-cover w-full h-full" />
