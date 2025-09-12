@@ -32,7 +32,7 @@ function Certificate() {
   ];
 
   return (
-    <div id="certificate" className="pt-10 sm:pt-25 pb-5">
+    <div id="certificate" className="pt-10 sm:pt-20 pb-5">
       <div className="container px-5 sm:px-0 md:px-5">
         <div className="flex items-center justify-center w-full mt-5 sm:mt-5">
           <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>
