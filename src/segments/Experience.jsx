@@ -48,14 +48,14 @@ function Experience() {
         "images/infinit/1.png",
         "images/infinit/3.jpg",
         "images/infinit/2.jpg",
-        "images/infinit/5.jpg",
+        "images/infinit/6.jpg",
       ],
     },
   ];
 
   return (
-    <div id="experience" className="py-10 sm:py-20">
-      <div className="container sm:px-0 md:px-5">
+    <div id="experience" className="pt-10 sm:pt-30">
+      <div className="container px-5 sm:px-0 md:px-5">
         <div className="dark:text-white pt-5">
           <div className="flex items-center justify-start">
             <h1 className="font-bold text-2xl sm:text-4xl ml-5 pr-5">Experience</h1>
@@ -92,7 +92,7 @@ function Experience() {
                                 key={i}
                                 src={img}
                                 alt={`${exp.company} ${i + 1}`}
-                                className="w-auto h-32 rounded-lg shadow-md"
+                                className="w-auto h-32 rounded-lg shadow-md transform transition duration-300 hover:scale-150 hover:shadow-xl"
                               />
                             ))}
                           </div>
