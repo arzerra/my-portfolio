@@ -4,12 +4,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Header from './components/Header.jsx'
+import Footer from './components/Footer.jsx'
 import Fonts from './components/Fonts.jsx'
 import Hero from './segments/Hero.jsx'
 import About from './segments/About.jsx'
 import Experience from './segments/Experience.jsx'
 import Project from './segments/Project.jsx'
 import Certificate from './segments/Certificate.jsx'
+import Contact from './segments/Contact.jsx'
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
                 <Experience/>
                 <Project/>
                 <Certificate/>
+                <Contact/>
+                <Footer/>
               </>
             } 
           />

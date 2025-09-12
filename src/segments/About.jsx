@@ -71,7 +71,7 @@ function About() {
                 </div>
 
                 <ul className="flex flex-row gap-5 sm:gap-10 mt-6 text-md text-center justify-center items-center">
-                  {["Contact", "Soft Skills", "Hobbies", "Language"].map((tab) => (
+                  {["Soft Skills", "Hobbies", "Language", "Contact" ].map((tab) => (
                     <li
                       key={tab}
                       className={`cursor-pointer pb-1 transition-colors font-semibold 
@@ -86,15 +86,6 @@ function About() {
                 </ul>
 
                 <div className="mt-6 text-start justify-start min-h-[250px] sm:min-h-[300px]">
-                  {activeTab === "Contact" && (
-                    <ul className="list-none border-l-2 border-gray-500 pl-5 space-y-5">
-                      <li className="flex items-center gap-4"><CgMail size={20}/> <span>ianclrk.canete@gmail.com</span></li>
-                      <li className="flex items-center gap-4"><CgMail size={20}/> <span>i.canete.524581@umindanao.edu.ph</span></li>
-                      <li className="flex items-center gap-4"><CiPhone  size={20}/> <span>09912174478 / 09288265266</span></li>
-                      <li className="flex items-center gap-4"><CiLocationOn size={20}/> <span>Catalunan Grande, Davao City, Philippines</span></li>
-                      <li className="flex items-center gap-4"><FiGithub size={20}/> <span>github.com/arzerra</span></li>
-                      </ul>
-                  )}
                   {activeTab === "Soft Skills" && (
                     <>
                     <ul className="list-none border-l-2 border-gray-500 pl-5 space-y-5">
@@ -126,6 +117,14 @@ function About() {
                       <li className="flex items-center gap-4">• <span>Bisaya</span></li>
                     </ul>
                     </>
+                  )}
+                  {activeTab === "Contact" && (
+                    <ul className="list-none border-l-2 border-gray-500 pl-5 space-y-5">
+                      <li className="flex items-center gap-4"><CgMail size={20}/> <span>ianclrk.canete@gmail.com</span></li>
+                      <li className="flex items-center gap-4"><CgMail size={20}/> <span>i.canete.524581@umindanao.edu.ph</span></li>
+                      <li className="flex items-center gap-4"><CiPhone  size={20}/> <span>09912174478 / 09288265266</span></li>
+                      <li className="flex items-center gap-4"><CiLocationOn size={20}/> <span>Catalunan Grande, Davao City, Philippines</span></li>
+                      </ul>
                   )}
                 </div>
               </div>
