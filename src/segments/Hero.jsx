@@ -31,7 +31,7 @@ function Hero() {
               <h1 className="dark:text-white text-2xl sm:text-5xl mt-2 font-['Bungee_Shade']">
               <Typewriter
                 options={{
-                strings: ["Full Stack Dev", "UI/UX Designer", "Future SoftDev"],
+                strings: ["Full Stack Dev", "UI/UX Designer", "Aspiring Dev"],
                 autoStart: true,
                 loop: true,
                 }}
