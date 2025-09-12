@@ -92,7 +92,7 @@ function Experience() {
                                 key={i}
                                 src={img}
                                 alt={`${exp.company} ${i + 1}`}
-                                className="w-auto h-32 rounded-lg shadow-md transform transition duration-300 hover:scale-150 hover:shadow-xl"
+                                className="w-32 sm:w-auto h-auto sm:h-32 rounded-lg shadow-md transform transition duration-300 hover:scale-150 hover:shadow-xl"
                               />
                             ))}
                           </div>
