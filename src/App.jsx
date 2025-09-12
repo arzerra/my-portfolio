@@ -11,7 +11,6 @@ import About from './segments/About.jsx'
 import Experience from './segments/Experience.jsx'
 import Project from './segments/Project.jsx'
 import Certificate from './segments/Certificate.jsx'
-import Contact from './segments/Contact.jsx'
 
 
 function App() {
@@ -36,7 +35,6 @@ function App() {
                 <Experience/>
                 <Project/>
                 <Certificate/>
-                <Contact/>
                 <Footer/>
               </>
             } 

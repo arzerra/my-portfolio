@@ -46,11 +46,11 @@ function About() {
 
   return (
     <>
-      <div id="about" className="pt-20">
+      <div id="about" className="pt-25">
         <div className='container  pt-10 px-5 sm:px-0 md:px-5'>
           <div className="flex flex-col sm:flex-row">
             {/* Left */}
-            <div className='flex flex-1 items-center justify-center sm:justify-start' data-aos="fade-right">
+            <div className='flex flex-1 items-center justify-center sm:justify-start animate-leftright' data-aos="fade-right">
                 <img src="gif/1.gif" alt="Light Logo" className="w-70 sm:w-100 dark:hidden transition-opacity duration-700 rounded-4xl" />
                 <img src="images/glow2.png" alt="Dark Logo" className="w-70 sm:w-100 hidden dark:block transition-opacity duration-700 rounded-4xl" />
             </div>
@@ -130,33 +130,7 @@ function About() {
               </div>
             </div>
           </div>
-
-          {/* Education */}
-          {/* <div className="flex flex-col items-center justify-center mt-10 dark:text-white mt-0 sm:mt-10">
-            <div>
-              <h1 className="text-4xl">EDUCATION</h1>
-            </div>
-
-            <div className="w-full border-1 dark:border-[#F9F3F3] shadow-xl rounded-2xl mt-5">
-
-              <div className="flex flex-col items-center justify-center m-5">
-                <h1 className="text-xl sm:text-4xl">Univesity of Mindanao</h1>
-                <h1 className="text-md sm:text-2xl">Bachelor of Science in Information Technology</h1>
-                <h1 className="text-sm sm:text-xl">College of Computing Education (CCE)</h1>
-              </div>
-              <div className="flex flex-row items-center justify-center ">
-                <div className="border-r-1 w-full px-5">
-                  <div className="flex items-center justify-center">
-                    <h1>Capstone</h1>
-                  </div>
-                </div>
-                <div className="border-l-1 w-full px-5">
-
-                </div>
-              </div>
-            </div>
-          </div> */}
-
+          
           {/* Tech Stack */}
             <div className="flex items-center justify-center w-full my-5 sm:my-10">
               <div className="flex-grow border-b border-gray-400 dark:border-gray-600"></div>

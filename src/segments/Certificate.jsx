@@ -32,7 +32,7 @@ function Certificate() {
   ];
 
   return (
-    <div id="certificate" className="py-10 sm:py-10">
+    <div id="certificate" className="py-10 sm:pt-25">
       <div className="container px-5 sm:px-0 md:px-5">
         <div className="dark:text-white flex flex-col justify-center items-center">
           <h1 className="font-bold text-4xl">Certificates</h1>

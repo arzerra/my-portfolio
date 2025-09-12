@@ -75,14 +75,14 @@ function Header() {
                   Certifications
                   </HashLink>
             </li>
-            <li><HashLink smooth 
+            {/* <li><HashLink smooth 
                  to="#certificate" 
                  className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
                  after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:mt-1 after:transition-all after:duration-300
                  hover:after:w-full">
                   Contacts
                   </HashLink>
-            </li>
+            </li> */}
           </ul>
         </nav>
 

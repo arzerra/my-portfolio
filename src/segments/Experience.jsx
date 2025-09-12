@@ -54,7 +54,7 @@ function Experience() {
   ];
 
   return (
-    <div id="experience" className="pt-10 sm:pt-30">
+    <div id="experience" className="pt-10 sm:pt-25">
       <div className="container px-5 sm:px-0 md:px-5">
         <div className="dark:text-white pt-5">
           <div className="flex items-center justify-start">
@@ -63,11 +63,11 @@ function Experience() {
           </div>
 
           {/* Timeline container */}
-          <div className="relative border-l-2 border-gray-300 dark:border-gray-600 mx-5 my-10">
+          <div className="relative border-l-2 border-gray-300 dark:border-gray-600 mx-5 mt-10">
             {experiences.map((exp, index) => (
               <div
                 key={index}
-                className="relative pl-10 pb-10 cursor-pointer"
+                className="relative pl-10 pb-15 cursor-pointer"
                 onClick={() => toggleAccordion(index)}
               >
                 {/* Timeline dot */}
