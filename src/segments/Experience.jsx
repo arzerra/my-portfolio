@@ -22,7 +22,7 @@ function Experience() {
       company: "VXI Global Solutions",
       role: "Customer Service Representative - Voice",
       details:
-        "A technical support representative, where I played a key role in providing exceptional customer service and technical assistance to a diverse clientele.",
+        "A technical support representative, where I played a key role in providing exceptional customer service and technical assistance to a diverse clients.",
       images: ["images/vxi/1.png", "images/vxi/2.jpg", "images/vxi/3.jpg"],
     },
     {
@@ -43,7 +43,7 @@ function Experience() {
       company: "Advance Infinit Solution Inc.",
       role: "Internship",
       details:
-        "Developed a clean, user-friendly platform reflecting the clinic’s commitment to exceptional dental care while making it easier for patients to book online.",
+        "Contributed to the development of school websites, Learning Management Systems (LMS), and Student Information Management Systems (SIMS).",
       images: [
         "images/infinit/1.png",
         "images/infinit/3.jpg",

@@ -20,7 +20,7 @@ function Hero() {
 
   return (
     <>
-    <div className="pt-20 sm:pt-40">
+    <div id="hero" className="pt-20 sm:pt-40">
       <div className='container flex flex-col sm:flex-row pt-10 px-5 sm:px-0'>
 
         {/* left */}

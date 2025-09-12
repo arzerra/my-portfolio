@@ -4,10 +4,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Header from './components/Header.jsx'
-import Hero from './components/Hero.jsx'
-import About from './components/About.jsx'
+import Hero from './segments/Hero.jsx'
+import About from './segments/About.jsx'
 import Fonts from './components/Fonts.jsx'
-import Experience from './components/Experience.jsx'
+import Experience from './segments/Experience.jsx'
 
 
 function App() {

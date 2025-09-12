@@ -35,13 +35,13 @@ function Header() {
           } absolute top-25 left-0 w-full bg-[#AAAAAA] dark:bg-[#27374D] z-50 md:static md:block md:w-auto md:h-auto`}
         >
           <ul className="flex flex-col md:flex-row gap-5 items-center font-medium font-[Quicksand] text-lg p-4 md:p-0">
-            <li><a 
-                 href="/" 
+            <li><HashLink smooth
+                 to="/#hero" 
                  className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
                  after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:transition-all after:duration-300
                  hover:after:w-full">
                   Home
-                </a>
+                </HashLink>
             </li>
             <li><HashLink smooth
                  to="/#about" 
@@ -51,37 +51,37 @@ function Header() {
                   About
                 </HashLink>
             </li>
-            <li><a 
-                  href="#experience" 
+            <li><HashLink smooth 
+                  to="#experience" 
                   className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
                   after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:transition-all after:duration-300
                   hover:after:w-full">
                     Experience
-                    </a>
+                    </HashLink>
             </li>
-            <li><a 
-                 href="#projects" 
+            <li><HashLink smooth 
+                 to="#projects" 
                  className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
                  after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:transition-all after:duration-300
                  hover:after:w-full">
                   Projects
-                  </a>
+                  </HashLink>
             </li>
-            <li><a 
-                 href="#certificate" 
+            <li><HashLink smooth 
+                 to="#certificate" 
                  className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
                  after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:mt-1 after:transition-all after:duration-300
                  hover:after:w-full">
                   Certifications
-                  </a>
+                  </HashLink>
             </li>
-            <li><a 
-                 href="#certificate" 
+            <li><HashLink smooth 
+                 to="#certificate" 
                  className="relative after:content-[''] after:absolute after:left-0 after:-bottom-1
                  after:w-0 after:h-[2px] after:bg-black dark:after:bg-white after:mt-1 after:transition-all after:duration-300
                  hover:after:w-full">
                   Contacts
-                  </a>
+                  </HashLink>
             </li>
           </ul>
         </nav>
