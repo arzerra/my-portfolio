@@ -3,6 +3,7 @@ import Card1 from '../components/projects/Card1.jsx';
 import Card2 from '../components/projects/Card2.jsx';
 import Card3 from '../components/projects/Card3.jsx';
 import Card4 from '../components/projects/Card4.jsx';
+import Card5 from '../components/projects/Card5.jsx';
 import Card from '../components/projects/Card.jsx';
 
 function Project() {
@@ -24,7 +25,7 @@ function Project() {
             </div>
             <div className='flex flex-col sm:flex-row gap-10'>
               <Card4/>
-              <Card/>
+              <Card5/>
               <Card/>
             </div>
           </div>

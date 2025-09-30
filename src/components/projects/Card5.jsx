@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Card = () => {
+const Card5 = () => {
   return (
     <StyledWrapper>
       <div className="card">
-        <div className='cursor-pointer'>
-        <img src="images/projects/wip.gif" alt="" />
+        <a href="https://resumebuilder-clark.vercel.app/" target='_blank'>
+        <img src="images/projects/resume-builder.png" alt="" />
         <div className="card__content">
-          <p className="card__title">Work in Progress</p>
-          {/* <p className="card__description">Develop a clean, user-friendly platform that reflects the clinic’s commitment to providing exceptional 
-            dental care while making it easier for patients to learn about their services and book appointments online.</p> */}
+          <p className="card__title">Resume Builder</p>
+          <p className="card__description">Created a simple resume builder to help those who need a 
+            quick and easy way to showcase their skills and experience.</p>
         </div>
-        </div>
+        </a>
       </div>
     </StyledWrapper>
   );
@@ -98,4 +98,4 @@ const StyledWrapper = styled.div`
 `;
 
 
-export default Card;
+export default Card5;

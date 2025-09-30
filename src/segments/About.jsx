@@ -26,22 +26,22 @@ function About() {
     }, [images.length]);
 
     const techs = [
-      { icon: <FaHtml5 className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <FaCss3Alt className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <FaBootstrap className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <FaJsSquare className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <BiLogoTypescript className="w-11 h-11 sm:w-[65px] sm:h-[65px]" /> },
-      { icon: <FaReact className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <FaNodeJs className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <SiMysql className="w-11 h-11 sm:w-[65px] sm:h-[65px]" /> },
-      { icon: <FaJava className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <FaPython className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <FaFlutter className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <SiCplusplus className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <FaGitAlt className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <FaLaravel className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <SiTensorflow  className="w-10 h-10 sm:w-16 sm:h-16" /> },
-      { icon: <SiFirebase  className="w-10 h-10 sm:w-16 sm:h-16" /> },
+      { icon: <FaHtml5 className="w-10 h-10 sm:w-16 sm:h-16" />, name: "HTML" },
+      { icon: <FaCss3Alt className="w-10 h-10 sm:w-16 sm:h-16" />, name: "CSS" },
+      { icon: <FaBootstrap className="w-10 h-10 sm:w-16 sm:h-16" />, name: "Bootstrap" },
+      { icon: <FaJsSquare className="w-10 h-10 sm:w-16 sm:h-16" />, name: "JavaScript" },
+      { icon: <BiLogoTypescript className="w-11 h-11 sm:w-[65px] sm:h-[65px]" />, name: "TypeScript" },
+      { icon: <FaReact className="w-10 h-10 sm:w-16 sm:h-16" />, name: "React" },
+      { icon: <FaNodeJs className="w-10 h-10 sm:w-16 sm:h-16" />, name: "Node.js" },
+      { icon: <SiMysql className="w-11 h-11 sm:w-[65px] sm:h-[65px]" />, name: "MySQL" },
+      { icon: <FaJava className="w-10 h-10 sm:w-16 sm:h-16" />, name: "Java" },
+      { icon: <FaPython className="w-10 h-10 sm:w-16 sm:h-16" />, name: "Python" },
+      { icon: <FaFlutter className="w-10 h-10 sm:w-16 sm:h-16" />, name: "Flutter" },
+      { icon: <SiCplusplus className="w-10 h-10 sm:w-16 sm:h-16" />, name: "C++" },
+      { icon: <FaGitAlt className="w-10 h-10 sm:w-16 sm:h-16" />, name: "Git" },
+      { icon: <FaLaravel className="w-10 h-10 sm:w-16 sm:h-16" />, name: "Laravel" },
+      { icon: <SiTensorflow className="w-10 h-10 sm:w-16 sm:h-16" />, name: "TensorFlow" },
+      { icon: <SiFirebase className="w-10 h-10 sm:w-16 sm:h-16" />, name: "Firebase" },
     ];
 
   return (
