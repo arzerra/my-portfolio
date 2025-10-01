@@ -44,7 +44,7 @@ function Certificate() {
         </div>
 
         {/* Carousel */}
-        <div className="mt-10 pt-5 pb-2 flex overflow-x-auto snap-x snap-mandatory gap-6 custom-scrollbar">
+        <div className="mt-10 pt-15 pb-2 flex overflow-x-auto snap-x snap-mandatory gap-6 custom-scrollbar">
           {certificate.map((cert, i) => (
             <div
               key={i}
