@@ -25,6 +25,18 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+    useEffect(() => {
+    const titles = {
+      "#hero": "Clark's Portfolio | Home",
+      "#about": "Clark's Portfolio | About",
+      "#experience": "Clark's Portfolio | Experience",
+      "#project": "Clark's Portfolio | Projects",
+      "#certificate": "Clark's Portfolio | Certifications",
+    };
+
+    document.title = titles[activeSection] || "Clark's Portfolio";
+  }, [activeSection]);
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#AAAAAA] dark:bg-[#27374D] dark:text-white">
       <div className="container mx-auto flex justify-between items-center py-5 px-5 sm:px-0 md:px-5">
