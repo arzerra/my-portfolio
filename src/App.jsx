@@ -1,50 +1,54 @@
-import {React, useEffect} from 'react'
+import { React, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
-import Fonts from './components/Fonts.jsx'
-import Hero from './segments/Hero.jsx'
-import About from './segments/About.jsx'
-import Experience from './segments/Experience.jsx'
-import Project from './segments/Project.jsx'
-import Certificate from './segments/Certificate.jsx'
-
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Fonts from "./components/Fonts.jsx";
+import Hero from "./segments/Hero.jsx";
+import About from "./segments/About.jsx";
+import Experience from "./segments/Experience.jsx";
+import Project from "./segments/Project.jsx";
+import Certificate from "./segments/Certificate.jsx";
+import BackToTop from "./components/BackToTop.jsx";
 
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: true,  
+      duration: 1000,
+      once: true,
     });
   }, []);
 
   return (
-    <div className='h-full w-full bg-[#DDDDDD] dark:bg-gradient-to-r dark:from-[#0A2647] dark:to-[#021526]'>
+    <div className="h-full w-full bg-[#DDDDDD] dark:bg-gradient-to-r dark:from-[#0A2647] dark:to-[#021526]">
       <Router>
-        <Header/>
+        <Header />
+        <BackToTop />
         <Routes>
-          <Route 
-            path="/" 
+          <Route
+            path="/"
             element={
               <>
-                <Hero/>
-                <About/>
-                <Experience/>
-                <Project/>
-                <Certificate/>
-                <Footer/>
+                <Hero />
+                <About />
+                <Experience />
+                <Project />
+                <Certificate />
+                <Footer />
               </>
-            } 
+            }
           />
-          <Route path="/fonts" element={<Fonts/>} />
-          <Route path="*" element={<h1 className="text-center text-2xl">404 - Not Found</h1>} />
+          <Route path="/fonts" element={<Fonts />} />
+          <Route
+            path="*"
+            element={<h1 className="text-center text-2xl">404 - Not Found</h1>}
+          />
         </Routes>
       </Router>
     </div>
-  )
+  );
 }
 
 export default App;
